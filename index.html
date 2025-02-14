@@ -4,21 +4,27 @@
     <title>Card</title>
   </head>
   <style>
-    body {
+    * {
       font-family: sans-serif;
       word-spacing: 1px;
     }
 
-    #call-to-card {
+    .call-to-card {
       padding: 25px 40px;
       margin: auto;
       border: 1px solid rgba(0, 0, 0, 0.35);
       width: 325px;
     }
 
-    h1 {
+    .call-to-card > h1 {
       font-weight: 300;
       color: rgba(0, 0, 0, 0.6);
+    }
+
+    .call-to-card > p {
+      line-height: 25px;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.5);
     }
 
     .seperator-line {
@@ -31,18 +37,12 @@
       border-radius: 24px;
       font-weight: 300;
       background-color: green;
+      padding: 10px 0;
       color: white;
     }
 
     #try-now-button {
-      padding: 10px 0;
       background-color: #4184e1;
-    }
-
-    p {
-      line-height: 25px;
-      font-weight: 300;
-      color: rgba(0, 0, 0, 0.5);
     }
 
     #agreement {
@@ -52,7 +52,7 @@
     }
   </style>
   <body>
-    <div id="call-to-card">
+    <div class="call-to-card">
       <h1>Build your first chatbot in 10 minutes!</h1>
       <div class="seperator-line"></div>
       <p>
